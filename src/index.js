@@ -6,7 +6,7 @@ import PrimeiroComponente from './components/PrimeiroComponente';
 const elemento = document.getElementById('root');
 ReactDOM.render(
   <div>
-    <PrimeiroComponente></PrimeiroComponente>
+    <PrimeiroComponente valor='Bom Dia!'></PrimeiroComponente>
   </div>,
   elemento
 );
