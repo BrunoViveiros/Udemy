@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 export default class Contador extends Component {
-  maisUm() {
+  maisUm = () => {
     this.props.numero++;
-  }
+  };
 
   render() {
     return (
@@ -15,3 +15,18 @@ export default class Contador extends Component {
     );
   }
 }
+
+// Solução 01 - Função bind
+// constructor(props) {
+//   super(props);
+//   this.maisUm = this.maisUm.bind(this);
+// }
+
+// Solução 02 - Função Arrow no click
+// <button onClick={() => this.maisUm()}>Inc</button>
+
+// Solução 03 - Função Arrow
+// maisUm = () => {
+//   // this.props.numero++;
+//   console.log(this);
+// }
